@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Laskuri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Laskuri</h1>
+    <form id="f">
+      <input type="text" id="n1" placeholder="Anna ensimmäinen luku"><br>
+      <input type="text" id="n2" placeholder="Anna toinen luku"><br>
+      <button type="button" onclick="tulostaSumma(f.n1.value, f.n2.value)">Laske summa</button>
+    </form>
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

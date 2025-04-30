@@ -1,0 +1,43 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f0d4e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  width: 300px;
+
+}
+#summaBtn {
+  background-color: rgb(106, 4, 87);
+  color: rgb(239, 206, 239);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: bold;
+ 
+}
+
+input, button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 16px;
+  background-color: rgb(222, 163, 227);
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
