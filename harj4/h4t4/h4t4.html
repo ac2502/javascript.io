@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H04T04</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h2>Värisovellus</h2>
+    
+    <!-- Pudotusvalikko väreille -->
+    <label for="colorSelect">Valitse väri:</label>
+    <select id="colorSelect">
+      <option value="#FF0000">Punainen</option>
+      <option value="#00FF00">Vihreä</option>
+      <option value="#0000FF">Sininen</option>
+      <option value="#FFFF00">Keltainen</option>
+    </select>
+
+    <!-- Tulostusalue -->
+    <div id="resultArea">
+      <p id="colorCode">Valittu väri: #FF0000</p>
+      <input type="text" id="eventText" placeholder="Mikä juhla?" />
+      <p id="eventOutput">Juhlan nimi näkyy täällä.</p>
+    </div>
+
+    <!-- Vaihda taustaväri -->
+    <button id="changeBgButton">Vaihda valittu taustaväri</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

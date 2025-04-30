@@ -1,0 +1,32 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #e8f6ee;
+  text-align: center;
+}
+h1 {
+  color: #71177d;
+}
+h2 {
+  color: #71177d;
+}
+
+.image-links span {
+  margin-right: 15px;
+  cursor: pointer;
+  color: rgb(179, 11, 205);
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.image-links span:hover {
+  color: rgb(246, 103, 213);
+}
+
+.main-image {
+  margin-top: 20px;
+  width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
