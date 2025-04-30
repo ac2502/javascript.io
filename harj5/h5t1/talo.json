@@ -1,0 +1,16 @@
+[
+  {
+    "image": "talo1.jpg",
+    "address": "Aaltokatu 3, 00120, Helsinki",
+    "size": 170,
+    "price": 2904000,
+    "text": "Alvar Aallon suunnittelema vuonna 1896 valmistunut moderni talo Ullanlinnan korttelissa."
+  },
+  {
+    "image": "talo2.jpg",
+    "address": "Buenos diaz, 00200, Mallorca",
+    "size": 200,
+    "price": 348000,
+    "text": "upea omakotitalo rauhallisella ja aurinkoisella alueella lähellä rantaa ja palveluita."
+  }
+]

@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.taustakuva {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Blur-taustakuva */
+.taustakuva::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('bit.jpg');
+  background-size:contain;
+  background-position: center;
+  filter: blur(8px);
+  transform: scale(1.05);
+  z-index: 1; /* Taustakuva on alla */
+}
+
+/* Tumma peitekerros */
+.taustakuva::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Himmennys */
+  z-index: 2; /* Peitekerros on juuri taustakuvan päällä */
+}
+
+/* Sisältö (tekstit, painike) */
+.overlay {
+  position: relative;
+  z-index: 3; /* Sisältö on päällimmäisenä */
+  text-align: center;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Pehmeä tausta tekstille */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#price {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}

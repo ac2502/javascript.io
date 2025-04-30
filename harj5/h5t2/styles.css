@@ -1,0 +1,31 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #da9968;
+  color: #483616;
+}
+
+#norris-image {
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+#fact {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  font-size: 18px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+h1 {
+  color: rgb(56, 33, 19);
+}
