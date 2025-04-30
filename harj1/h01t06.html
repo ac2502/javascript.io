@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harjoitus 6</title>
+  <script>
+    function analyzeNumbers(arr) {
+      const min = Math.min(...arr);
+      const max = Math.max(...arr);
+      const sum = arr.reduce((a, b) => a + b, 0);
+      const average = sum / arr.length;
+
+      console.log("Array:", arr);
+      console.log("Min:", min);
+      console.log("Max:", max);
+      console.log("Sum:", sum);
+      console.log("Average:", average.toFixed(2));
+    }
+
+    const values = [10, 20, 5, 8, 30];
+    analyzeNumbers(values);
+  </script>
+</head>
+<body></body>
+</html>

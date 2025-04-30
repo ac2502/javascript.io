@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harjoitus 9</title>
+  <script>
+    const names = [];
+
+    while (true) {
+      const name = prompt("Anna nimi (tyhjä lopettaa):");
+      if (!name) break;
+      names.push(name);
+    }
+
+    console.log("Alkuperäinen järjestys:", names);
+    console.log("Aakkosjärjestyksessä:", [...names].sort());
+  </script>
+</head>
+<body></body>
+</html>

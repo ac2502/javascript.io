@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harjoitus 8</title>
+  <script>
+    function isPalindrome(text) {
+      const cleanText = text.toLowerCase().replace(/\s/g, "");
+      const reversed = cleanText.split("").reverse().join("");
+      return cleanText === reversed;
+    }
+
+    const samples = [
+      "Saippuakauppias",
+      "Aaro painii nakuna, Anu kaniinia poraa",
+      "Aale, relaa!"
+    ];
+
+    samples.forEach(str => {
+      console.log(`${str} -> ${isPalindrome(str) ? "yes" : "no"}`);
+    });
+  </script>
+</head>
+<body></body>
+</html>
