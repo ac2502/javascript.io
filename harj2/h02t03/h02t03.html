@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>H02T3 alv</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>ALV-laskin</h1>
+    <p>Syötä veroton hinta:</p>
+    <input type="number" id="alvitonHinta" placeholder="€">
+    <!-- tämä antaa mahdollisuuden laskea tai nostaa € määrää nuolilla -->
+
+    <div class="buttons">
+      <button onclick="laskeALV()">Laske ALV yleinen (25.5%)</button>
+      <button onclick="laskeALV(getInputValue(), 14)">Laske ALV 14%</button>
+      <button onclick="laskeALV(getInputValue(), 10)">Laske ALV 10%</button>
+    </div>
+
+    <div id="tulos"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

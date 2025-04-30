@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>H02T05 Loading</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      color: #eed3f1;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: rgb(83, 4, 85);
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="latausDiv">Loading... 0%</div>
+
+  <script>
+    let lataus = 0;
+    const latausDiv = document.getElementById("latausDiv");
+
+    const latausAjastin = setInterval(() => {
+      lataus++;
+      if (lataus < 100) {
+        latausDiv.textContent = `Loading... ${lataus}%`;
+      } else {
+        latausDiv.textContent = "Loading finished!";
+        clearInterval(latausAjastin);
+      }
+    }, 100); // Vaihda 1000 jos haluat sekunnin välein
+  </script>
+</body>
+</html>

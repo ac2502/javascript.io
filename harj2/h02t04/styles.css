@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(241, 214, 245);
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+input[type="number"] {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4d033f;
+  color: rgb(245, 214, 241);
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
