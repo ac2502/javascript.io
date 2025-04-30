@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harjoitus 7</title>
+  <script>
+    function isLeapYear(year) {
+      return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+    }
+
+    const testYears = [1991, 1992, 1900, 2000];
+    testYears.forEach(year => {
+      console.log(`${year} -> ${isLeapYear(year) ? "on karkausvuosi" : "ei ole karkausvuosi"}`);
+    });
+  </script>
+</head>
+<body></body>
+</html>

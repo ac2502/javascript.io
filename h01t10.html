@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harjoitus 10</title>
+  <script>
+    const scores = [];
+
+    for (let i = 1; i <= 5; i++) {
+      const score = parseInt(prompt(`Anna tuomarin ${i} pisteet (1–20):`), 10);
+      scores.push(score);
+    }
+
+    const sorted = [...scores].sort((a, b) => a - b);
+    const trimmed = sorted.slice(1, 4); // poistetaan pienin ja suurin
+
+    const sum = trimmed.reduce((a, b) => a + b, 0);
+    console.log("Kaikki pisteet:", scores);
+    console.log("Hyväksytyt pisteet:", trimmed);
+    console.log("Tyylipisteiden summa:", sum);
+  </script>
+</head>
+<body></body>
+</html>
