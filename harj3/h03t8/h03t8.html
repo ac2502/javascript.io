@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<title>H03T8 Vauhtilaskin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="box">
+<h3>Vauhtilaskin</h3>
+
+<form id="f">
+<table>
+<tbody>                                            <!--Tässä tunnit/min/sek/km on placeholdereita--> 
+   <tr><td>Tunnit: </td><td><input type="text" id="n1" tunnit="1" value="1"></td></tr>
+   <tr><td>Minuutit: </td><td><input type="text" id="n2" minuutit="20" value="20"></td></tr>
+   <tr><td>Sekunnit: </td><td><input type="text" id="n3" sekunnit="0" value="0"></td></tr>
+   <tr><td>Kilometrit:</td><td><input type="text" id="n4" kilometrit="10" value="10"></td></tr>
+</tbody>
+</table>
+
+<button type="button" id="laske">Laske vauhti</button>
+</form>
+
+<p id="tulos"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

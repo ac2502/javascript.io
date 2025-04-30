@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hissisimulaattori</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="elevator-container">
+    <h1>Hissisimulaattori</h1>
+    <div id="display" class="display">Hissi on kerroksessa</div> <!-- Näyttää hissin nykykerroksen -->
+    
+    <div id="button-container" class="button-container">
+      <!-- Numeropainikkeet 0-9 -->
+      <div class="row">
+        <button class="floor-button" data-floor="1">1</button>
+        <button class="floor-button" data-floor="2">2</button>
+        <button class="floor-button" data-floor="3">3</button>
+      </div>
+      <div class="row">
+        <button class="floor-button" data-floor="4">4</button>
+        <button class="floor-button" data-floor="5">5</button>
+        <button class="floor-button" data-floor="6">6</button>
+      </div>
+      <div class="row">
+        <button class="floor-button" data-floor="7">7</button>
+        <button class="floor-button" data-floor="8">8</button>
+        <button class="floor-button" data-floor="9">9</button>
+      </div>
+      <div class="row">
+        <button class="floor-button" data-floor="0">0</button>
+      </div>
+    </div>
+    <button id="go-button" class="go-button" disabled>Go</button> <!-- Go-painike -->
+    
+    <div id="status"></div> <!-- Näyttää viestin, kun hissi liikkuu -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

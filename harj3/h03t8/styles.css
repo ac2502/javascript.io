@@ -1,0 +1,43 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #f3dcee;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*määrittää missä kohtaa sivua*/
+* {
+  width: 200px;
+  margin: auto;
+}
+
+.box {
+  border: 1px dashed #4d063d;;
+  padding: 15px;
+  background-color: #dbc5e5;
+  margin-top: 15px;
+}
+
+input[type="text"] {
+  width: 60px;
+}
+
+button {
+  background-color: rgb(53, 4, 59);
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  padding: 5px 15px;
+  border: none;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4d063d;
+}
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #4d063d;
+}
